@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\client",
     "\\client\\src",
-    "\\client\\src\\app"
+    "\\client\\src\\app",
+    "\\DatingApp"
   ],
-  "SelectedNode": "\\client\\src\\app\\app.module.ts",
+  "SelectedNode": "\\DatingApp\\.gitignore",
   "PreviewInSolutionExplorer": false
 }

@@ -36,7 +36,7 @@ namespace DatingApp
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DatingApp", Version = "v1" });
             });
             services.AddCors();
-            services.AddIdentityServices();
+            services.AddIdentityServices(_config);
             
         }
 

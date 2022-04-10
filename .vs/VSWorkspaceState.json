@@ -1,15 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\client",
-    "\\client\\src",
-    "\\client\\src\\app",
     "\\client\\src\\app\\nav",
-    "\\client\\src\\app\\_models",
-    "\\client\\src\\app\\_services",
     "\\DatingApp",
-    "\\DatingApp\\extensions"
+    "\\DatingApp\\Controllers"
   ],
-  "SelectedNode": "\\client\\src\\app\\nav\\nav.component.ts",
+  "SelectedNode": "\\DatingApp\\Controllers\\UsersController.cs",
   "PreviewInSolutionExplorer": false
 }

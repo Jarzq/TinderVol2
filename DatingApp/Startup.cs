@@ -14,6 +14,7 @@ using System;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using DatingApp.extensions;
+using DatingApp.Middleware;
 
 namespace DatingApp
 {
@@ -37,21 +38,18 @@ namespace DatingApp
             });
             services.AddCors();
             services.AddIdentityServices(_config);
-            
+
         }
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DatingApp v1"));
-            }
+            
 
             app.UseHttpsRedirection();
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseRouting();
 

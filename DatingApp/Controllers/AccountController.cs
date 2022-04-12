@@ -25,8 +25,8 @@ namespace DatingApp.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
-            if(await UserExists(registerDto.Username)) return BadRequest("Username is taken");
-          
+            if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
+
             using var hmac = new HMACSHA512();
 
             var user = new AppUser
@@ -43,8 +43,8 @@ namespace DatingApp.Controllers
             {
                 UserName = user.UserName,
                 Token = _tokenService.CreateToken(user)
-                
-                
+
+
             };
         }
 
@@ -61,7 +61,7 @@ namespace DatingApp.Controllers
 
             var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
 
-            for(int i=0;i<computedHash.Length;i++)
+            for (int i = 0; i < computedHash.Length; i++)
             {
                 if (computedHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid password");
             }
@@ -77,7 +77,7 @@ namespace DatingApp.Controllers
 
         private async Task<bool> UserExists(string username)
         {
-           return await _context.Users.AnyAsync(x => x.UserName == username.ToLower());           
+            return await _context.Users.AnyAsync(x => x.UserName == username.ToLower());
         }
     }
 }

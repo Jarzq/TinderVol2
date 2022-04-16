@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\client",
-    "\\client\\src",
     "\\client\\src\\app",
-    "\\client\\src\\app\\errors\\not-found"
+    "\\DatingApp",
+    "\\DatingApp\\entities"
   ],
-  "SelectedNode": "\\client\\src\\app\\app-routing.module.ts",
+  "SelectedNode": "\\DatingApp\\Errors",
   "PreviewInSolutionExplorer": false
 }

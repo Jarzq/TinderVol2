@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
-    "",
     "\\client",
     "\\client\\src",
-    "\\client\\src\\app",
-    "\\client\\src\\app\\lists",
+    "\\client\\src\\app\\_interceptors",
     "\\client\\src\\app\\_services",
-    "\\DatingApp",
-    "\\DatingApp\\entities"
+    "\\client\\src\\environments"
   ],
   "PreviewInSolutionExplorer": false
 }

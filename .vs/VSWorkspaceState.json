@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
+    "",
     "\\client",
     "\\client\\src",
-    "\\client\\src\\app\\_interceptors",
-    "\\client\\src\\app\\_services",
-    "\\client\\src\\environments"
+    "\\client\\src\\app",
+    "\\client\\src\\app\\members",
+    "\\client\\src\\app\\members\\member-detail",
+    "\\client\\src\\app\\members\\member-edit"
   ],
+  "SelectedNode": "\\client\\src\\app\\members\\member-edit\\member-edit.component.html",
   "PreviewInSolutionExplorer": false
 }

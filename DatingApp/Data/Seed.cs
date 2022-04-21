@@ -21,7 +21,7 @@ namespace DatingApp.Data
             {
                 using var hmac = new HMACSHA512();
 
-                user.UserName = user.UserName.ToLower();
+                user.Username = user.Username.ToLower();
                 user.PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes("password"));
                 user.PasswordSalt = hmac.Key;
 
